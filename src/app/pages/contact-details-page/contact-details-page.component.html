@@ -1,0 +1,19 @@
+<div class="contact-details-page">
+    <div class="buttons space-between flex">
+        <div class="back-btn" (click)="onBack()">
+            <!-- <button class="back-btn clean-btn" (click)="onBack()"></button> -->
+        </div>
+        <div class="delete-btn clean-btn" (click)="onDeleteContact()"></div>
+        <div class="edit-btn clean-btn" [routerLink]="['/contacts','edit',contact._id]"></div>
+        <!-- <button class="edit-btn clean-btn" [routerLink]="['/contacts','edit',contact._id]"></button> -->
+        <!-- <button class="delete-btn clean-btn" (click)="onDeleteContact()"></button> -->
+    </div>
+    <img src="https://robohash.org/set_set5/{{contact._id}}" alt="">
+    <div class="content ">
+        <p class="name">{{contact.name}}</p>
+        <p class="phone">{{contact.phone}}</p>
+        <p class="email">{{contact.email}}</p>
+    </div>
+    <transfer-funds [contact]="contact"></transfer-funds>
+    <move-list [contact]="contact"></move-list>
+</div>

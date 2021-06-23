@@ -1,0 +1,548 @@
+.home {
+    header {
+        background-color: #014e56;
+        nav {
+            margin: 50px 0;
+            font-family: Livvic-Semibold;
+            justify-content: space-between;
+            .logo {
+                display: flex;
+                svg {
+                    width: 128px;
+                    height: 32px;
+                }
+            }
+            .hamburger {
+                font-size: 20px;
+                transform: rotate3d(0, 0, 1, 90deg);
+            }
+            .nav-btns {
+                display: none;
+                .links {
+                    & > * {
+                        margin-inline-end: 45px;
+                    }
+                }
+            }
+            button {
+                // display: block;
+                font-family: Livvic-Semibold;
+                background-color: transparent;
+                border: 2px solid #fff;
+                border-radius: 3rem;
+                font-size: 18px;
+                line-height: 46px;
+                padding: 0 32px;
+                transition: transform 0.1s ease-in-out;
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+    main {
+        .introduction-wrapper {
+            position: relative;
+            background-color: #014e56;
+            min-height: 440px;
+
+            .first-img {
+                display: none;
+            }
+            .introduction {
+                flex-direction: column;
+                height: fit-content;
+                z-index: 3;
+                text-align: center;
+                h1 {
+                    font-family: Livvic-Bold;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                    span {
+                        color: #f67e7e;
+                    }
+                }
+                // }
+                .introduction-info {
+                    position: relative;
+                    p {
+                        font-family: Livvic-Semibold;
+                        font-size: rem(15px);
+                        max-width: 327px;
+                        // max-width: 445px;
+                        line-height: 28px;
+                    }
+                    .third-img {
+                        display: none;
+                    }
+                }
+            }
+            .second-img-wrapper {
+                position: relative;
+                grid-column: -1/1;
+                display: flex;
+                .second-img {
+                    // position: absolute;
+                    // bottom: 0;
+                    // left: 0px;
+                    // right: 0px;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+        }
+        .product-wrapper {
+            background-color: #012f34;
+            position: relative;
+            @include for-wide-layout {
+                height: 700px;
+            }
+            .first-img {
+                margin-bottom: 40px;
+            }
+            .product {
+                padding-top: 65px;
+                @include for-wide-layout {
+                    padding-top: 140px;
+                }
+                div {
+                    flex-direction: column;
+                    @include for-wide-layout {
+                        flex-direction: unset;
+                    }
+                    .product-headline {
+                        max-width: 240px;
+                        @include for-wide-layout {
+                            max-width: 445px;
+                        }
+                        h2 {
+                            font-size: rem(32px);
+                            font-family: Livvic-Bold;
+                            @include for-wide-layout {
+                                font-size: rem(48px);
+                            }
+                            margin-bottom: 55px;
+                            @include for-wide-layout {
+                                margin-bottom: none;
+                            }
+                        }
+                    }
+                    .product-about {
+                        z-index: 3;
+                        margin-bottom: 20px;
+                        @include for-wide-layout {
+                            margin-bottom: unset;
+                        }
+                        > * {
+                            margin-bottom: 50px;
+                            height: fit-content;
+                            display: flex;
+                            flex-direction: column;
+                            max-width: 540px;
+                            text-align: center;
+                            @include for-wide-layout {
+                                flex-direction: unset;
+                                text-align: unset;
+                                margin-bottom: 30px;
+                            }
+                            .img {
+                                width: 72px;
+                                height: 72px;
+                                margin-bottom: 20px;
+                                margin: 0px auto 20px;
+                                @include for-wide-layout {
+                                    margin-bottom: none;
+                                    margin-inline-end: 20px;
+                                }
+                                svg {
+                                    width: 72px;
+                                }
+                            }
+                            div {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                        h4 {
+                            font-family: Livvic-Bold;
+                            font-size: rem(18px);
+                            line-height: 28px;
+                            margin-bottom: 8px;
+                            @include for-wide-layout {
+                                margin-bottom: 25px;
+                            }
+                            color: #f67e7e;
+                        }
+                        p {
+                            font-family: Livvic-SemiBold;
+                            font-size: 15px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+                .fifth-img {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    @include for-wide-layout {
+                        bottom: 0;
+                        top: unset;
+                    }
+                }
+            }
+        }
+        .about-team-wrapper {
+            background-color: #004047;
+            min-height: 745px;
+            position: relative;
+
+            .first-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .third-img {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                transform: scaleX(-1);
+            }
+            .about-team {
+                z-index: 3;
+                margin: 110px 0;
+                text-align: center;
+                @include for-wide-layout {
+                    margin: 150px 0;
+                }
+                h2 {
+                    margin: 0 auto 50px;
+                    max-width: 940px;
+                    font-size: rem(32px);
+                    font-family: Livvic-Bold;
+                    @include for-wide-layout {
+                        font-size: rem(48px);
+                    }
+                    span {
+                        color: #79c8c7;
+                    }
+                }
+                .team-container {
+                    width: fit-content;
+                    margin: auto;
+                    flex-direction: column; //
+                    > *:not(:last-child) {
+                        @include for-wide-layout {
+                            margin-inline-end: 30px;
+                        }
+                    }
+                    @include for-wide-layout {
+                        flex-direction: unset; //
+                    }
+                    .team-member {
+                        display: flex;
+                        flex-direction: column;
+                        height: 300px;
+                        max-width: 350px;
+                        padding-top: 35px;
+                        position: relative;
+                        margin-bottom: 50px; //
+                        @include for-wide-layout {
+                            padding-top: 60px;
+                        }
+                        svg {
+                            position: absolute;
+                            width: 100%;
+                            transform: translateY(-35px);
+                            z-index: -1;
+                        }
+                        p {
+                            font-family: Livvic-SemiBold;
+                            line-height: 25px;
+                            z-index: 1;
+                            margin-bottom: 25px;
+                            font-size: rem(15px);
+                            @include for-wide-layout {
+                                margin-bottom: 35px;
+                            }
+                        }
+                        h4 {
+                            font-family: Livvic-SemiBold;
+                            font-size: rem(18px);
+                            margin-bottom: 10px;
+                            color: #79c8c7;
+                        }
+                        span {
+                            font-family: Livvic-MediumItalic;
+                            font-size: rem(13px);
+                            margin-bottom: 30px;
+                        }
+                        img {
+                            width: 62px;
+                            height: 62px;
+                            border: 2px solid #c4fffe;
+                            border-radius: 50%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .contact-us-wrapper {
+            background-color: #f67e7e;
+            height: 300px;
+            @include for-wide-layout {
+                height: 200px;
+            }
+            position: relative;
+            svg {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: translateY(20px);
+                clip-path: inset(0px 0px 20px 0);
+                @include for-wide-layout {
+                    transform: unset;
+                    clip-path: unset;
+                }
+                // z-index: -1;
+            }
+            .contact-us {
+                z-index: 3;
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                color: #012f34;
+                @include for-wide-layout {
+                    width: 1080px;
+                    flex-direction: unset;
+                    align-items: unset;
+                }
+                h2 {
+                    // display: inline-block;
+                    padding: 0 30px;
+                    font-size: rem(32px);
+                    font-family: Livvic-Bold;
+                    text-align: center;
+                    margin-bottom: 25px;
+
+                    @include for-wide-layout {
+                        font-size: rem(48px);
+                        margin-bottom: unset;
+                        padding: unset;
+                        text-align: unset;
+                    }
+                }
+                button {
+                    font-family: Livvic-Semibold;
+                    background-color: transparent;
+                    border: 2px solid #012f34;
+                    color: inherit;
+                    border-radius: 3rem;
+                    font-size: 18px;
+                    line-height: 46px;
+                    padding: 0 32px;
+                    transition: transform 0.1s ease-in-out;
+                    margin-bottom: 5px;
+
+                    @include for-wide-layout {
+                        margin-bottom: unset;
+                    }
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        min-height: 200px;
+        background-color: #002529;
+        .footer-content {
+            margin: auto;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            padding: 65px 0;
+            text-align: center;
+
+            @include for-wide-layout {
+                flex-direction: unset;
+                align-items: unset;
+                padding: unset;
+            }
+            .footer-info {
+                flex-direction: column;
+                @include for-wide-layout {
+                    flex-direction: unset;
+                }
+                .footer-logo {
+                    margin-bottom: 30px;
+                    @include for-wide-layout {
+                        margin-bottom: unset;
+                        margin-inline-end: 125px;
+                    }
+                    .logo {
+                        margin-bottom: 20px;
+                        svg {
+                            width: 128px;
+                            height: 24px;
+                            @include for-wide-layout {
+                                height: 32px;
+                            }
+                        }
+                    }
+                    .links {
+                        justify-content: center;
+                        @include for-wide-layout {
+                            justify-content: unset;
+                        }
+                        > * {
+                            font-size: rem(15px);
+                            @include for-wide-layout {
+                                font-size: rem(18px);
+                            }
+                            font-family: Livvic-SemiBold;
+                        }
+                        :first-child {
+                            margin-inline-end: 40px;
+                        }
+                    }
+                }
+                .company-info {
+                    margin-bottom: 45px;
+                    font-size: rem(15px);
+                    @include for-wide-layout {
+                        font-size: rem(16px);
+                        margin-bottom: unset;
+                        width: 445px;
+                    }
+                    color: #fff;
+                    opacity: 0.6;
+                    font-family: Livvic-SemiBold;
+                }
+            }
+            .footer-copyrights {
+                height: 100%;
+                width: 255px;
+                font-family: Livvic-SemiBold;
+                font-size: rem(15px);
+                .social-container {
+                    margin-bottom: 20px;
+                    @include for-wide-layout {
+                        margin-bottom: 50px;
+                        align-self: flex-end;
+                    }
+                    > * {
+                        cursor: pointer;
+                        margin-inline-end: 15px;
+                    }
+                }
+                p {
+                    color: #fff;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $narrow-breakpoint) {
+}
+
+@media screen and (min-width: $normal-breakpoint) {
+    .home {
+        header {
+            // background-color: #014e56;
+            nav {
+                margin: 80px 0;
+                // font-family: Livvic-Semibold;
+                justify-content: none;
+                .logo {
+                    margin-inline-end: 80px;
+                    svg {
+                        width: 160px;
+                        height: 40px;
+                    }
+                }
+                .hamburger {
+                    display: none;
+                }
+                .nav-btns {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+        }
+
+        main {
+            .introduction-wrapper {
+                // position: relative;
+                // background-color: #014e56;
+                min-height: 500px;
+                .first-img {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                }
+                .introduction {
+                    // height: fit-content;
+                    // z-index: 3;
+                    flex-direction: unset;
+                    text-align: unset;
+
+                    h1 {
+                        font-family: Livvic-Bold;
+                        font-size: 100px;
+                        font-weight: 700;
+                        line-height: 100px;
+                        text-align: unset;
+                        margin-bottom: unset;
+                    }
+                    .introduction-info {
+                        // position: relative;
+                        p {
+                            font-size: rem(18px);
+                        }
+                        .third-img {
+                            display: block;
+                        }
+                    }
+                }
+                .second-img-wrapper {
+                    position: relative;
+                    display: unset;
+                    grid-column: 2;
+                    .second-img {
+                        width: unset;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+
+        footer {
+            // min-height: 200px;
+            // background-color: #002529;
+            .footer-content {
+                // margin: auto;
+                // width: 100%;
+                .footer-logo {
+                    // margin-inline-end: 125px;
+                    .logo {
+                        margin-bottom: 20px;
+                        svg {
+                            width: 160px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

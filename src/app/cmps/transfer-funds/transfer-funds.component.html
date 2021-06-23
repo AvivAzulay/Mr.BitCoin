@@ -1,0 +1,9 @@
+<div class="transfer-funds flex justify-center">
+    <form (ngSubmit)="onSumbit()">
+        <label for="amount"></label>
+        <div class="flex">
+            <input type="number" name="amount" [(ngModel)]="amount" placeholder="Transfer to {{contact.name}}">
+            <button class="clean-btn">Transfer</button>
+        </div>
+    </form>
+</div>

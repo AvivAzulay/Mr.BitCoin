@@ -1,0 +1,83 @@
+.contact-edit-page {
+  text-align: center;
+  .edit-form {
+    text-align: center;
+    height: 50px;
+    input {
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      // background: linear-gradient(90deg, #ffffff 50%, #2b3147 100%);
+      &::placeholder {
+        font-size: 13px;
+      }
+      border: 0;
+      outline: 0;
+      padding: 15px;
+    }
+  }
+
+  .img-edit {
+    height: 200px;
+    width: 200px;
+  }
+  .back-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #2b3147 0%, #1d2333 100%);
+    &:hover {
+      color: #81fbf7;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before {
+      content: "\e95d";
+      font-family: Icons;
+      font-size: 33px;
+      margin: 0 5px;
+      color: azure;
+    }
+  }
+  .delete-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #2b3147 0%, #1d2333 100%);
+    &:hover {
+      color: #81fbf7;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before {
+      content: "\e971";
+      font-family: Icons;
+      font-size: 33px;
+      margin: 0 5px;
+      color: azure;
+    }
+  }
+
+  .edit-btn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 10px;
+    gap: 70px;
+  }
+  .save-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: linear-gradient(90deg, #2b3147 0%, #1d2333 100%);
+    color: #81fbf7c0;
+  }
+}

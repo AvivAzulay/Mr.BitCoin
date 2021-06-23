@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+// ::selection {
+//     background-color: $clr1;
+//     color: #fff;
+// }
+
+html {
+    font-family: montserrat, sans-serif;
+    font-size: rem(16px);
+    color: #fff;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #3b435a;
+    margin: 0;
+    background-size: 116px;
+}
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: caveat, sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: rem(65px);
+}
+
+p {
+    margin: 0px;
+}
+
+hr {
+    border-color: rgb(255 255 255 / 7%);
+}

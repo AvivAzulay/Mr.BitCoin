@@ -1,0 +1,20 @@
+<div *ngIf="!contact" class="move-list">
+    <h3>Your Last 3 transaction:</h3>
+    <div class="move-preview" *ngFor="let move of moves">
+        <p>To: {{move.to}}</p>
+        <p>Amount: {{move.amount}} coins</p>
+        <p>status <span>approved</span></p>
+        <small>At: {{move.at | date :'medium'}}</small>
+    </div>
+</div>
+
+<div *ngIf="contact" class="move-list">
+    <h3 *ngIf="contact">Your Moves:</h3>
+    <h3 *ngIf="!contact">Your Last 3 transaction:</h3>
+    <div class="move-preview" *ngFor="let move of moves">
+        <p *ngIf="!contact">To: {{move.to}}</p>
+        <p>Amount: {{move.amount}} coins</p>
+        <p *ngIf="!contact">status <span>approved</span></p>
+        <p>At: {{move.at | date :'medium'}}</p>
+    </div>
+</div>

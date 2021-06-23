@@ -1,0 +1,45 @@
+.contact-list {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        margin: 5px 0px;
+        border-radius: 5px;
+        background: #2b3147;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #1f2535;
+    }
+
+    /* Handle on hover */
+    // &::-webkit-scrollbar-thumb:hover {
+    //     transform: scale(1.1);
+    // }
+
+    .add-contact {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        margin: 15px;
+        // height: 50px;
+        position: flex;
+        cursor: pointer;
+        z-index: 10;
+        transition: transform .1s;
+        svg {
+            width: 65px;
+        }
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

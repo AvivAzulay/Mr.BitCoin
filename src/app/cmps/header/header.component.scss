@@ -1,0 +1,95 @@
+.app-header {
+    background-color: rgba(0, 0, 0, 0.123);
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 25px;
+        box-shadow: -20px -12px 20px 0px #1e436b;
+    }
+    .logo {
+        height: 85px;
+        svg {
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            .cls-1 {
+                fill: white;
+            }
+            .cls-2{
+                fill: #ffa934;  
+            }
+        }
+    }
+    .menu {
+        cursor: pointer;
+        background: linear-gradient(90deg, rgba(43, 49, 71, 1) 0%, rgba(29, 35, 51, 1) 100%);
+        width: 55px;
+        height: 55px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            padding: 0 5px;
+            width: 80%;
+            height: 80%;
+        }
+        &:hover {
+            background: linear-gradient(90deg, rgb(44, 49, 70) 0%, rgb(36, 42, 58) 100%);
+        }
+    }
+    nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        width: 200px;
+        z-index: 10;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+        background-color: #343b4f;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        span {
+            font-size: 40px;
+            line-height: 0.5;
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+            box-shadow: 0 1px 0 1px rgb(34 40 56 / 50%);
+            cursor: pointer;
+        }
+        a {
+            box-shadow: 0 1px 0 1px rgb(34 40 56 / 50%);
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: rgb(34 40 56 / 50%);
+            }
+        }
+    }
+    nav.open {
+        transform: translateX(0%);
+    }
+    .screen-overlay {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(22, 22, 22, 0.665);
+        cursor: pointer;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .screen-overlay.show {
+        pointer-events: auto;
+        opacity: 1;
+    }
+}

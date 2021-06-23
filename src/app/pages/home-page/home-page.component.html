@@ -1,0 +1,20 @@
+<div>
+
+    <div class="home-page">
+        <h1> Hi, {{user.name}}</h1>
+        <hr>
+        <div class="flex space-between">
+            <div>
+                <small>Current Balance</small>
+                <h2>BIT: <span class="span-btc">B {{user.coins}}</span></h2>
+                <h2>USD: <span class="span-usd">{{sum | currency}}</span></h2>
+            </div>
+            <div class="right-side">
+                <small>Current BTC USD</small>
+                <h2>${{btcUsd| number}}</h2>
+            </div>
+        </div>
+    </div>
+    <chart></chart>
+    <move-list></move-list>
+</div>

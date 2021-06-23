@@ -1,0 +1,31 @@
+.transfer-funds {
+    display: flex;
+    input,
+    button {
+        border: 0;
+        outline: 0;
+        padding: 15px;
+    }
+    button {
+        color: #81fbf7c0;
+        text-transform: uppercase;
+        border-top-right-radius: 5px;
+        background: linear-gradient(90deg, #2b3147 0%, #1d2333 100%);
+        &:hover {
+            color: #81fbf7;
+            background: linear-gradient(90deg, rgb(44, 49, 70) 0%, rgb(36, 42, 58) 100%);
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input {
+        border-bottom-left-radius: 5px;
+        // background: linear-gradient(90deg, #ffffff 50%, #2b3147 100%);
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+}

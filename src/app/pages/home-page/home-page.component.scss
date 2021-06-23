@@ -1,0 +1,39 @@
+.home-page {
+    padding: 5px 25px;
+    background-color: #3b4561;
+    h1 {
+        font-family: Inter-Regular;
+        font-size: 30px;
+        // font-family: Inter-Light ;
+    }
+    h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        .span-btc {
+            color: #a4e62d;
+        }
+        .span-usd {
+            opacity: 0.4;
+            color: #aac9cd;
+        }
+    }
+    small {
+        font-size: 12px;
+        text-transform: uppercase;
+        opacity: 0.4;
+        font-family: Inter-Light;
+        display: flex;
+        margin-bottom: 3px;
+    }
+    .right-side {
+        h2 {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 34px;
+        }
+        small {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

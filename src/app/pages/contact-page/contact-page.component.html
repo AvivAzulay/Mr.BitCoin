@@ -1,0 +1,5 @@
+<section class="contact-page">
+    <contact-filter [filterBy]="filterBy" (onFilter)="onSetFilter($event)">
+    </contact-filter>
+    <contact-list [contacts]="contacts$|async"></contact-list>
+</section>

@@ -1,0 +1,13 @@
+<div class="statistic-page">
+
+    <!-- <google-chart [height]="500" [width]="1000" [title]="chartMktPrice.title" -->
+    <google-chart [title]="chartMktPrice.title" [type]="chartMktPrice.type"
+        [data]="chartMktPrice.data" [options]="chartMktPrice.options">
+    </google-chart>
+
+    <!-- <google-chart [height]="500" [width]="1000" -->
+    <google-chart [title]="chartConfirmedTrans.title"
+        [type]='chartConfirmedTrans.type' [data]="chartConfirmedTrans.data"
+        [options]="chartConfirmedTrans.options"></google-chart>
+
+</div>
